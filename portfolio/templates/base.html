@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="static/style.css">
+
+<head>
+    <title>{% block title%}{% endblock %}</title>
+    <div>
+        <h1 class="logo-superior"><a href="{{ url_for('portfolio.home')}}">Anderson Matheus</a></h1>
+        <strong><nav>
+            <ul class="menu">
+                <li><a href="{{ url_for('portfolio.home')}}">Início</a></li>
+                <li><a href="{{ url_for('portfolio.projetos')}}">Projetos</a></li>
+                <li><a href="{{ url_for('portfolio.about')}}">Sobre mim</a></li>
+            </ul>
+        </nav></strong>
+    </div>
+</head>
+
+<div>
+    {% block main %}{% endblock %}
+</div>
+
+<footer>
+    <div>{% block footer %}{% endblock %}</div>
+</footer>
+</html>

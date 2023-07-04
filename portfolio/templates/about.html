@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Sobre Anderson{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="box">
+        <h2>Sobre mim:</h2>
+        <p>
+        Olá! Sou um técnico em eletrotécnica com uma paixão profunda pela programação, circuitos e eletrônica. Desde o meu primeiro contato com a programação de Controladores Lógicos Programáveis (CLPs), fiquei encantado pelo mundo da tecnologia.<br>
+        Essa paixão me levou a buscar uma formação acadêmica mais ampla e me matriculei no curso de Bacharelado em Ciência e Tecnologia.</p>
+        <p class="espaçamento-paragrafo">Durante meu curso, adquiri um sólido conhecimento em fundamentos de cálculo, estatística, programação e também em disciplinas como 
+        física e química. No entanto, foi próximo ao fim do curso que minha jornada na inteligência artificial começou a se desdobrar. Fui atraído pelo fascinante campo do aprendizado de máquinas e me aprofundei mais em estudos sobre redes neurais convolucionais.<br>
+        Como parte do meu trabalho de conclusão de curso, explorei a aplicação de redes neurais convolucionais na classificação de doenças em plantas de uva por meio de análise de imagens. 
+        Essa experiência foi transformadora e desde então tenho me dedicado a me capacitar ainda mais no campo da inteligência artificial.
+        Com uma sólida base em cálculo e estatística, concentrei meus esforços em cursos de programação e no aprendizado de frameworks como TensorFlow, com o objetivo de construir aplicações do mundo real.</p>
+        <p>Atualmente, sou um entusiasta, estudante e apaixonado por inteligência artificial, com especial interesse em robótica e visão computacional. Estou em constante busca por conhecimento e desafios para aprimorar minhas habilidades nessas áreas.
+        Acredito firmemente no poder da tecnologia para transformar o mundo e estou animado para explorar novas oportunidades e contribuir para projetos inovadores.
+        Se você está procurando alguém apaixonado, dedicado e com conhecimento tanto em eletrotécnica quanto em inteligência artificial, estou pronto para colaborar em projetos desafiadores. Vamos criar o futuro juntos!</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="box">
+        <h2>Projetos:</h2>
+        <div class="menu">
+            <ul>
+                <li><a href="{{ url_for('portfolio.home') }}">Projeto 1</a></li>
+                <p>Descrição do projeto 1</p>
+                <li><a href="{{ url_for('portfolio.home') }}">Projeto 2</a></li>
+                <p>Descrição do projeto 2</p>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

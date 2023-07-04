@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Portfolio de Anderson{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="box">
+        <img class="imagem-propria" src="{{ url_for('static', filename='imagens/mathezzzlab-logo.png') }}">
+        <h1>Anderson Matheus Melo da Silva</h1>
+        <div>
+            <h3>Este é o espaço que criei para compartilhar meus projetos</h3>
+            <h4>Veja o que você quer saber sobre mim:</h4>
+            <div>
+                <li><a href="{{ url_for('portfolio.projetos') }}">Projetos</a></li>
+                <li><a href="{{ url_for('portfolio.about') }}">Sobre mim</a></li>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
